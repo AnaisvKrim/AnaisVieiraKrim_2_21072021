@@ -1,6 +1,5 @@
-/*Média queries Smartphone 320px ligne 529
-				Smartphone 375px ligne 879
-                Tablette ligne 1226*/
+/*Média queries Smartphone ligne 532
+                Tablette ligne 882*/
 
 body { /* Rajouter la police*/
 	font-family: 'Raleway';
@@ -52,6 +51,9 @@ header a{
 	padding-right: 15px;
 }
 
+#ins{
+	margin-left: 60px;
+}
 
 .inscrire{
 	width: 97px;
@@ -565,6 +567,7 @@ footer a:hover{
 		width: 30%;
 		display: flex;
 		justify-content: flex-end;
+		margin-left: 0;
 	}
 
 	.inscrire{
@@ -915,6 +918,7 @@ footer a:hover{
 		width: 30%;
 		display: flex;
 		justify-content: flex-end;
+		margin-left: 0;
 	}
 
 	.inscrire{
@@ -1013,9 +1017,9 @@ footer a:hover{
 	}
 
 	#bloc-filtres{
-
 		display: flex;
 		flex-direction: column;
+		
 	}
 
 	#filtres{
@@ -1263,6 +1267,7 @@ footer a:hover{
 		width: 30%;
 		display: flex;
 		justify-content: flex-end;
+		margin-left: 0;
 	}
 
 	.inscrire{
@@ -1577,3 +1582,4 @@ footer a:hover{
 		padding-top: 0;
 	}
 }
+	
