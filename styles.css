@@ -1,5 +1,6 @@
-/*Média queries Smartphone ligne 532
-                Tablette ligne 882*/
+/*Média queries Smartphone 320px ligne 528
+				Smartphone 375px ligne 874
+                Tablette ligne 1211*/
 
 body { /* Rajouter la police*/
 	font-family: 'Raleway';
@@ -9,25 +10,21 @@ body { /* Rajouter la police*/
 
 /*HEADER*/
 header{
-	margin-left: 2%;
-	width: 98%;
+	width: 100%%;
 	display: flex;
-	align-items: flex-start;
 }
 
 header img{
 	width: 150px;
 	height: 80px;
 	margin-top: 7%;
-	margin-right: 75%;
+	margin-left: 30px;
 }
-
-/* Penser à faire un padding à border-top*/
 
 .wrap{/* menu en haut à gauche*/
 	width: 318px;
 	display: flex;
-	margin-left: 65%;
+	margin-left: 60%;
 }
 
 header a{
@@ -35,7 +32,6 @@ header a{
 	color: black;
 	font-size: 1.1em;
 }
-
 
 .hebergements, .inscrire{
 	color: #0065FC;
@@ -52,12 +48,13 @@ header a{
 }
 
 #ins{
-	margin-left: 60px;
+	width: 8%;
+	margin-left: 2%;
 }
 
 .inscrire{
-	width: 97px;
-	margin-left: 55%;
+	width: 10%;
+	margin-left: 35%;
 }
 
 /*SECTION (1)*/
@@ -184,7 +181,6 @@ form{
 	align-items: center;
 	flex-direction: row;
 	justify-content: space-between;
-	height: 65px;
 	width: 70%;
 	padding-right: 50px;
 }
@@ -234,9 +230,11 @@ h4{
 /*Bloc Hébergements*/
 article{
 	width: 65%;
-	height: 625pt;
 	background-color: #f2f2f2;
 	border-radius: 25px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
 }
 
 article h3{
@@ -244,12 +242,10 @@ article h3{
 	padding-top: 4%;
 	margin-top: 0;
 	width: 50%;
-	height: 20pt;
 	font-size: 1.4em;
 }
 
 .conteneur-cards{
-	height: 450pt ;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
@@ -259,12 +255,13 @@ article h3{
 
 .conteneur-cards a{
 	width: 27%;
-	height: 210pt;
+	height: 280px;
 	background-color: #ffffff;
 	border-radius: 25px;
 	text-decoration: none;
 	color: black;
 	box-shadow: 0 0 1.5em lightgray;
+	margin-bottom: 3%;
 }
 
 .conteneur-cards p,.starblue{
@@ -275,7 +272,7 @@ article h3{
 	font-size: 1.1em;
 }
 
-.bloc-hebergements img{
+.conteneur-cards img{
 	object-fit: cover;
 	width: 95%;
 	height: 60%;
@@ -292,9 +289,8 @@ em{
 	text-decoration: none;
 	font-weight: bold;
 	color: black;
-	padding-bottom: 5px;
+	padding-bottom: 3%;
 	margin-left: 70px;
-	margin-top: 30px;
 	display: flex;
 	font-size: 1.2em;
 }
@@ -309,7 +305,6 @@ em{
 .bloc-populaires {
 	margin: 0 2%;
 	width: 30%;
-	height: 625pt;
 	background-color: #f2f2f2;
 	border-radius: 25px;
 }
@@ -322,7 +317,6 @@ em{
 	justify-content: space-between;
 }
 
-/*modif des écritures dans les containers*/
 .bloc-populaires h5{
 	font-size: 1.3em;
 	margin: 2% 0 0 47%;
@@ -335,21 +329,20 @@ em{
 
 #populaires{
 	width: 85%;
-	height: 510pt;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
 	padding-left:7%;
 }
 
 #populaires a{
 	width: 100%;
-	height: 150pt;
+	height: 200px;
 	color: black;
 	text-decoration: none;
 	background-color: white;
 	border-radius: 25px;
 	box-shadow: 0 0 1.5em lightgray;
+	margin-bottom: 4%;
 }
 
 .bloc-populaires img{
@@ -379,9 +372,9 @@ em{
 
 .bloc-photo{
 	width: 98%;
-	height: 425pt;
 	display: flex;
 	justify-content: space-between;
+	align-content: space-around;
 	padding-top: 1%;
 }
 
@@ -423,7 +416,6 @@ em{
 
 .activiteA{
 	width: 23%;
-	height: 425pt;
 	background-color: #ffffff;
 	border-radius: 25px;
 	box-shadow: 0 0 1.5em lightgray;
@@ -434,16 +426,20 @@ em{
 	height: 90%;
 }
 
+.activiteA a{
+	height: 90%;
+}
+
 .activiteB{
 	width: 23%;
-	height: 425pt;
+	height: 566px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	background-color: #ffffff;
 }
 
-.activiteB aside{
+.activiteB div{
 	background-color: #ffffff;
 	border-radius: 25px;
 	box-shadow: 0 0 1.5em lightgray;
@@ -492,7 +488,6 @@ footer{
 	background-color: #f2f2f2;
 	display: flex;
 	width: 100%;
-	height: 230pt;
 }
 
 footer div{
@@ -541,7 +536,6 @@ footer a:hover{
 		width: 100%;
 		display: flex;
 		flex-wrap: wrap;
-		height: 30%;
 		margin: 0;
 	}
 
@@ -566,7 +560,6 @@ footer a:hover{
 	#ins{
 		width: 30%;
 		display: flex;
-		justify-content: flex-end;
 		margin-left: 0;
 	}
 
@@ -582,14 +575,10 @@ footer a:hover{
 	}
 
 	.hebergements{
-		width: 100%;
 		font-weight: normal;
 		font-size: 1.1em;
-		padding-top: 0;
-		padding-bottom: 8%;
+		padding: 0 0 20px 18px;
 		margin: 0;
-		padding-left: 18px;
-		padding-right: 0;
 		border-top-style: none;
 		border-bottom-style: solid;
 		border-bottom-color: #0065FC;
@@ -603,7 +592,7 @@ footer a:hover{
 		font-size: 1.1em;
 		font-weight: normal;
 		margin-top: 0;
-		padding-bottom: 8%;
+		padding-bottom: 20px;
 		border-bottom-style: solid;
 		border-bottom-color: #f2f2f2;
 		border-bottom-width: 5px;
@@ -678,7 +667,6 @@ footer a:hover{
 		flex-wrap: wrap;
 		justify-content: normal;
 		width: 100%;
-		height: 280px;
 		padding-right: 0;
 		margin-right: 0;
 	}
@@ -722,7 +710,6 @@ footer a:hover{
 	/*aside poplaire*/
 	.bloc-populaires{
 		width: 100%;
-		height: 680px;
 		background-color: #f2f2f2;
 		border-radius: 0;
 		padding: 0;
@@ -731,8 +718,8 @@ footer a:hover{
 
 	#populaires{
 		width: 90%;
-		height: 535px;
 		padding-left: 4.5%;
+		padding-bottom: 5%;
 	}
 
 	#populaires h5{
@@ -766,7 +753,6 @@ footer a:hover{
 	.bloc-hebergements article{
 		display: flex;
 		flex-direction: column;
-		height: 1650px;
 		margin-top: 3%;
 		width: 100%;
 		background-color: #ffffff;
@@ -780,12 +766,13 @@ footer a:hover{
 	}
 
 	.conteneur-cards{
-		height: 1530px;
+		padding: 3% 1.5% 3% 1.5%;
 	}
 
 	.conteneur-cards a{
 		width: 94%;
-		height: 235px;	
+		height: 235px;
+		margin-bottom: 5%;
 	}
 
 	.conteneur-cards img{
@@ -811,44 +798,49 @@ footer a:hover{
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		height: 990pt;
 		padding-left: 2.5%;
 		width: 95%;
 	}
 
 	.activiteA {
 		width: 100%;
-		height: 150pt;
+		height: 200px;
 		margin-bottom: 6%;
+	}
+
+	.activiteA img{
+		height: 90%;
+		border-style: none;
 	}
 
 	.activiteB{
 		width: 100%;
 		margin-bottom: 0;
+		height: auto;
+	}
+
+	.activiteB img{
+		height: 75%;
 	}
 
 	.photo1{
-		height: 150pt;
+		height: 200px;
 		margin-bottom: 6%;
 	}
 
 	.photo2{
-		height: 150pt;
-		margin-bottom: 6%;
+		height: 200px;
+		margin-bottom: 12%;
 	}
 
 	.photo3{
-		height: 150pt;
+		height: 200px;
 		margin-bottom: 6%;
 	}
 
 	.photo4{
-		height: 150pt;
+		height: 200px;
 		margin-bottom: 6%;
-	}
-
-	.bloc-photo img{
-		height: 75%;
 	}
 
 	h5 .activiteA, .activiteB{
@@ -860,8 +852,7 @@ footer a:hover{
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		height: 450px;
-		margin-top: 10%;
+		margin-top: 7%;
 	}
 
 	footer div{
@@ -883,8 +874,8 @@ footer a:hover{
 @media screen and (min-width: 375px) and (max-width:500px){
 
 	body{
-		margin: 0;
-		width: 100%;
+		margin: auto;
+		width: auto;
 	}
 
 	/*header*/
@@ -892,7 +883,6 @@ footer a:hover{
 		width: 100%;
 		display: flex;
 		flex-wrap: wrap;
-		height: 30%;
 		margin: 0;
 	}
 
@@ -917,7 +907,6 @@ footer a:hover{
 	#ins{
 		width: 30%;
 		display: flex;
-		justify-content: flex-end;
 		margin-left: 0;
 	}
 
@@ -933,14 +922,10 @@ footer a:hover{
 	}
 
 	.hebergements{
-		width: 100%;
 		font-weight: normal;
 		font-size: 1.2em;
-		padding-top: 0;
-		padding-bottom: 8%;
 		margin: 0;
-		padding-left: 45px;
-		padding-right: 0;
+		padding: 0 0 15px 25px;
 		border-top-style: none;
 		border-bottom-style: solid;
 		border-bottom-color: #0065FC;
@@ -1027,7 +1012,6 @@ footer a:hover{
 		flex-wrap: wrap;
 		justify-content: normal;
 		width: 100%;
-		height: 210px;
 		padding-right: 0;
 		margin-right: 0;
 	}
@@ -1071,16 +1055,14 @@ footer a:hover{
 	/*aside poplaire*/
 	.bloc-populaires{
 		width: 100%;
-		height: 680px;
 		background-color: #f2f2f2;
 		border-radius: 0;
-		padding: 0;
+		padding: 0  0 4.5% 0;
 		margin: 0;
 	}
 
 	#populaires{
 		width: 90%;
-		height: 535px;
 		padding-left: 4.5%;
 	}
 
@@ -1115,7 +1097,6 @@ footer a:hover{
 	.bloc-hebergements article{
 		display: flex;
 		flex-direction: column;
-		height: 1650px;
 		margin-top: 3%;
 		width: 100%;
 		background-color: #ffffff;
@@ -1128,13 +1109,10 @@ footer a:hover{
 		margin: 0;
 	}
 
-	.conteneur-cards{
-		height: 1530px;
-	}
-
 	.conteneur-cards a{
 		width: 94%;
-		height: 235px;	
+		height: 235px;
+		margin-bottom: 5.5%;	
 	}
 
 	.conteneur-cards img{
@@ -1160,44 +1138,45 @@ footer a:hover{
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		height: 990pt;
 		padding-left: 2.5%;
 		width: 95%;
 	}
 
 	.activiteA {
 		width: 100%;
-		height: 150pt;
+		height: 200px;
 		margin-bottom: 6%;
+	}
+
+	.activiteA img{
+		height: 90%;
+		border-style: none;
 	}
 
 	.activiteB{
 		width: 100%;
 		margin-bottom: 0;
+		height: auto;
 	}
 
 	.photo1{
-		height: 150pt;
+		height: 200px;
 		margin-bottom: 6%;
 	}
 
 	.photo2{
-		height: 150pt;
-		margin-bottom: 6%;
+		height: 200px;
+		margin-bottom: 12%;
 	}
 
 	.photo3{
-		height: 150pt;
+		height: 200px;
 		margin-bottom: 6%;
 	}
 
 	.photo4{
-		height: 150pt;
+		height: 200px;
 		margin-bottom: 6%;
-	}
-
-	.bloc-photo img{
-		height: 75%;
 	}
 
 	h5 .activiteA, .activiteB{
@@ -1209,8 +1188,8 @@ footer a:hover{
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		height: 450px;
-		margin-top: 10%;
+		margin-top: 7%;
+		padding-top: 5%;
 	}
 
 	footer div{
@@ -1241,7 +1220,6 @@ footer a:hover{
 		width: 100%;
 		display: flex;
 		flex-wrap: wrap;
-		height: 30%;
 		margin: 0;
 	}
 
@@ -1266,7 +1244,6 @@ footer a:hover{
 	#ins{
 		width: 30%;
 		display: flex;
-		justify-content: flex-end;
 		margin-left: 0;
 	}
 
@@ -1276,20 +1253,15 @@ footer a:hover{
 		font-size: 1.3em;
 	}
 
-	/*test*/
 	.wrap a{
 		width: 50%;
 	}
 
 	.hebergements{
-		width: 100%;
 		font-weight: normal;
 		font-size: 1.2em;
-		padding-top: 0;
-		padding-bottom: 8%;
+		padding: 0 0 20px 45px;
 		margin: 0;
-		padding-left: 45px;
-		padding-right: 0;
 		border-top-style: none;
 		border-bottom-style: solid;
 		border-bottom-color: #0065FC;
@@ -1303,7 +1275,7 @@ footer a:hover{
 		font-size: 1.2em;
 		font-weight: normal;
 		margin-top: 0;
-		padding-bottom: 8%;
+		padding-bottom: 20px;
 		border-bottom-style: solid;
 		border-bottom-color: #f2f2f2;
 		border-bottom-width: 5px;
@@ -1377,7 +1349,6 @@ footer a:hover{
 		flex-wrap: wrap;
 		justify-content: normal;
 		width: 100%;
-		height: 210px;
 		padding-right: 0;
 		margin-right: 0;
 	}
@@ -1422,16 +1393,14 @@ footer a:hover{
 	/*aside poplaire*/
 	.bloc-populaires{
 		width: 100%;
-		height: 740px;
 		background-color: #f2f2f2;
 		border-radius: 0;
-		padding: 0;
+		padding: 0 0 4.5% 0;
 		margin: 0;
 	}
 
 	#populaires{
 		width: 90%;
-		height: 560px;
 		padding-left: 4.5%;
 	}
 
@@ -1466,7 +1435,6 @@ footer a:hover{
 	.bloc-hebergements article{
 		display: flex;
 		flex-direction: column;
-		height: 1960px;
 		margin-top: 3%;
 		width: 100%;
 		background-color: #ffffff;
@@ -1479,17 +1447,14 @@ footer a:hover{
 		margin: 0;
 	}
 
-	.conteneur-cards{
-		height: 1800px;
-	}
-
 	.conteneur-cards a{
 		width: 94%;
-		height: 275px;	
+		height: 275px;
+		margin-bottom: 4.5%;	
 	}
 
 	.conteneur-cards img{
-		padding: 10px 4px 4px 10px;
+		padding: 1.5% 0 1.5% 1.5%;
 		width: 97%;
 		height: 60%;
 	}
@@ -1502,7 +1467,6 @@ footer a:hover{
 /*fin section hébergements, début section ACTIVITE*/
 	.bloc-activite{
 		padding-top: 0;
-		height: 1780px;
 	}
 
 	.bloc-activite h3{
@@ -1516,39 +1480,39 @@ footer a:hover{
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		height: 990pt;
 		padding-left: 2.5%;
 		width: 95%;
 	}
 
 	.activiteA {
 		width: 100%;
-		height: 180pt;
+		height: 240px;
 		margin-bottom: 6%;
 	}
 
 	.activiteB{
 		width: 100%;
 		margin-bottom: 0;
+		height: auto;
 	}
 
 	.photo1{
-		height: 180pt;
+		height: 240px;
 		margin-bottom: 6%;
 	}
 
 	.photo2{
-		height: 180pt;
-		margin-bottom: 6%;
+		height: 240px;
+		margin-bottom: 10%;
 	}
 
 	.photo3{
-		height: 180pt;
+		height: 240px;
 		margin-bottom: 6%;
 	}
 
 	.photo4{
-		height: 180pt;
+		height: 240px;
 		margin-bottom: 6%;
 	}
 
@@ -1565,8 +1529,7 @@ footer a:hover{
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		height: 450px;
-		margin-top: 10%;
+		margin-top: 7%;
 	}
 
 	footer div{
