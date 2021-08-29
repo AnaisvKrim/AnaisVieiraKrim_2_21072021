@@ -1,6 +1,6 @@
-/*Média queries Smartphone 320px ligne 528
-				Smartphone 375px ligne 874
-                Tablette ligne 1211*/
+/*Média queries Smartphone 320px ligne 549
+				Smartphone 375px ligne 906
+                Tablette ligne 1252*/
 
 body { /* Rajouter la police*/
 	font-family: 'Raleway';
@@ -210,12 +210,27 @@ form{
 	font-size: 1.3em;
 }
 
+
+/*fin section1, début SECTION 2*/
+/* Propiétées pour section 2= article et aside*/
+
 h4{
 	font-size: 1.3em;
 	font-weight: normal;
 }
-/*fin section1, début SECTION 2*/
-/* Propiétées pour section 2= article et aside*/
+
+.bloc-info{
+	display: block;
+	width: 100%;
+}
+
+.bloc-info i{
+	color: #0065FC;
+	border-style: solid;
+	border-radius: 100%;
+	border-color: #f2f2f2;
+	padding: 0.4% 0.8%;
+}
 
 .stargrey{
 	color: lightgray;
@@ -225,6 +240,7 @@ h4{
 	margin: 0 2%;
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 /*Bloc Hébergements*/
@@ -317,14 +333,14 @@ em{
 	justify-content: space-between;
 }
 
-.bloc-populaires h5{
+#populaires .texte h5{
 	font-size: 1.3em;
-	margin: 2% 0 0 47%;
+	margin: 2% 0 0 7%;
 }
 
-#populaires a p{
+#populaires .texte p{
 	font-size: 1.2em;
-	margin: 2% 0 2% 47%;
+	margin: 2% 0 2% 7%;
 }
 
 #populaires{
@@ -343,6 +359,12 @@ em{
 	border-radius: 25px;
 	box-shadow: 0 0 1.5em lightgray;
 	margin-bottom: 4%;
+	display: flex;
+}
+
+#populaires .texte{
+	width: 50%;
+	padding-top: 20px;
 }
 
 .bloc-populaires img{
@@ -352,13 +374,12 @@ em{
 	padding-top: 6px;
 	padding-left: 6px;
 	border-radius: 25px 0 0 25px;
-	float: left;
 }
 
 .starblue2{
 	color: #0065fc;
 	padding-top: 50px;
-	padding-left: 47%;
+	padding-left: 7%;
 	width: 50%;
 	
 }
@@ -569,7 +590,6 @@ footer a:hover{
 		font-size: 1.1em;
 	}
 
-	/*test*/
 	.wrap a{
 		width: 50%;
 	}
@@ -685,25 +705,30 @@ footer a:hover{
 		margin-right: 10px;
 	}
 
-	.recherches-filtres h4{
+	
+
+/*fin section, début bloc hébergements*/
+	.bloc-hebergements h4{
 		margin: 0 0 10% 0;
 	}
 
-	.recherches-filtres h4 i{
-		float: left;
+	.bloc-hebergements h4 i{
     	padding: 6px 15px;	
-    	margin-right: 3px;
+    	margin-right: 10px;
 	}
 
 	.info{
 		font-size: 0.8em;
 	}
 
-/*fin section, début bloc hébergements*/
+	.bloc-info h4{
+		display: flex;
+		justify-content: space-between;
+		padding-left: 10px;
+		padding-top: 15px;
+	}
 
 	.bloc-hebergements{
-		display: flex;
-		flex-direction: column-reverse;
 		margin: 0;
 	}
 
@@ -723,19 +748,24 @@ footer a:hover{
 	}
 
 	#populaires h5{
-		font-size: 1.1em;
+		font-size: 1em;
 		margin: 6% 0 1% 0;
-		padding-left: 47%;
+		padding-left: 7%;
 	}
 
 	#populaires a p{
-		font-size: 1em;
+		font-size: 0.8em;
 		margin: 0;
-		padding: 2% 0 5% 47%;
+		padding: 5px 0 7px 10px;
 	}
 
 	#populaires a{
 		height: 170px;
+	}
+
+	#populaires .texte{
+		width: 60%;
+		padding-top: 10px;
 	}
 
 	.bloc-populaires h3{
@@ -745,14 +775,16 @@ footer a:hover{
 	}
 
 	#populaires .starblue2{
-		padding-top: 25px;
-		padding-left: 47%;
+		padding-top: 15px;
+		padding-left: 7%;
+		width: 65%;
 	}
 
 	/*article hébergement*/
 	.bloc-hebergements article{
 		display: flex;
 		flex-direction: column;
+		order: 3;
 		margin-top: 3%;
 		width: 100%;
 		background-color: #ffffff;
@@ -874,8 +906,8 @@ footer a:hover{
 @media screen and (min-width: 375px) and (max-width:500px){
 
 	body{
-		margin: auto;
-		width: auto;
+		margin:0;
+		width: 100%;
 	}
 
 	/*header*/
@@ -916,7 +948,6 @@ footer a:hover{
 		font-size: 1.3em;
 	}
 
-	/*test*/
 	.wrap a{
 		width: 50%;
 	}
@@ -983,7 +1014,7 @@ footer a:hover{
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		margin-left: -6%;
+		margin-left: -10px;
 		width: 5em;
 		border-radius: 16px;
 		background-color: #0065FC;
@@ -1030,26 +1061,29 @@ footer a:hover{
 		margin-right: 10px;
 	}
 
-	.recherches-filtres h4{
-		margin: 5% 0 10% 0;
-	}
+	
 
-	.recherches-filtres h4 i{
-		float: left;
-    	padding: 6px 15px;	
-    	margin-right: 3px;
+/*fin section, début bloc hébergements*/
+
+	.bloc-hebergements{
+		margin: 0;
 	}
 
 	.info{
 		font-size: 0.8em;
 	}
 
-/*fin section, début bloc hébergements*/
+	.bloc-info i{
+		margin-right: 15px;
+		padding: 2% 4%;
 
-	.bloc-hebergements{
+	}
+
+	.bloc-info h4{
 		display: flex;
-		flex-direction: column-reverse;
-		margin: 0;
+		justify-content: space-between;
+		padding-left: 15px;
+		padding-bottom: 5px;
 	}
 
 	/*aside poplaire*/
@@ -1066,18 +1100,6 @@ footer a:hover{
 		padding-left: 4.5%;
 	}
 
-	#populaires h5{
-		font-size: 1.1em;
-		margin: 6% 0 1% 0;
-		padding-left: 47%;
-	}
-
-	#populaires a p{
-		font-size: 1em;
-		margin: 0;
-		padding: 2% 0 5% 47%;
-	}
-
 	#populaires a{
 		height: 170px;
 	}
@@ -1088,15 +1110,34 @@ footer a:hover{
 		padding: 10% 4.5% 7% 4.5%;
 	}
 
-	#populaires .starblue2{
-		padding-top: 25px;
-		padding-left: 47%;
+	#populaires .texte{
+		width: 55%;
+		padding-top: 10px;
+	}
+
+	#populaires .texte h5{
+		font-size: 1em;
+		margin: 6% 0 1% 0;
+		padding-left: 7%;
+	}
+
+	#populaires .texte p{
+		font-size: 0.9em;
+		margin: 0;
+		padding: 5px 0 7px 13px;
+	}
+
+	#populaires .texte .starblue2{
+		width: 65%;
+		padding-top: 15px;
+		padding-left: 7%;
 	}
 
 	/*article hébergement*/
 	.bloc-hebergements article{
 		display: flex;
 		flex-direction: column;
+		order: 3;
 		margin-top: 3%;
 		width: 100%;
 		background-color: #ffffff;
@@ -1211,7 +1252,7 @@ footer a:hover{
 @media screen and (min-width: 501px) and (max-width: 770px){
 
 	body{
-	margin: 0 0 0 0;
+	margin: 0;
 	width: 100%;
 	}
 
@@ -1367,27 +1408,28 @@ footer a:hover{
 		margin-right: 10px;
 	}
 
-	.recherches-filtres h4{
-		margin: 5% 0 10% 3%;
-	}
-
-	.recherches-filtres h4 i{
-		float: left;
-    	padding: 6px 15px;	
-    	margin-right: 3px;
-	}
-
-	.info{
-		font-size: 1em;
-		padding-left: 2%;
-	}
+	
 
 /*fin section, début bloc hébergements*/
 
 	.bloc-hebergements{
-		display: flex;
-		flex-direction: column-reverse;
 		margin: 0;
+	}
+
+	.info{
+		font-size: 1em;
+	}
+
+	.bloc-info i{
+		margin-right: 15px;
+		padding: 10px 20px;
+
+	}
+
+	.bloc-info h4{
+		display: flex;
+		padding-left: 15px;
+		padding-bottom: 5px;
 	}
 
 	/*aside poplaire*/
@@ -1404,16 +1446,21 @@ footer a:hover{
 		padding-left: 4.5%;
 	}
 
-	#populaires h5{
-		font-size: 1.1em;
-		margin: 3% 0 1% 0;
-		padding-left: 47%;
+	#populaires .texte{
+		width: 55%;
+		padding-top: 10px;
 	}
 
-	#populaires a p{
-		font-size: 1em;
+	#populaires .texte h5{
+		font-size: 1.2em;
+		margin: 3% 0 1% 0;
+		padding-left: 7%;
+	}
+
+	#populaires .texte p{
+		font-size: 1.1em;
 		margin: 0;
-		padding: 1% 0 4% 47%;
+		padding: 1% 0 4% 7%;
 	}
 
 	#populaires a{
@@ -1427,14 +1474,16 @@ footer a:hover{
 	}
 
 	#populaires .starblue2{
+		width: 55%;
 		padding-top: 25px;
-		padding-left: 47%;
+		padding-left: 7%;
 	}
 
 	/*article hébergement*/
 	.bloc-hebergements article{
 		display: flex;
 		flex-direction: column;
+		order: 3;
 		margin-top: 3%;
 		width: 100%;
 		background-color: #ffffff;
@@ -1545,4 +1594,3 @@ footer a:hover{
 		padding-top: 0;
 	}
 }
-	
