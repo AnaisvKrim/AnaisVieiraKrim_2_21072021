@@ -1,6 +1,6 @@
-/*Média queries Smartphone 320px ligne 549
-				Smartphone 375px ligne 906
-                Tablette ligne 1252*/
+/*Média queries Smartphone 320px ligne 538
+				Smartphone 375px ligne 895
+                Tablette ligne 1241*/
 
 body { /* Rajouter la police*/
 	font-family: 'Raleway';
@@ -79,16 +79,15 @@ h2{
 	border-radius: 0 20px 20px 0;
 }
 
+.bouton2{
+	display: none;
+}
+
 input[type=submit] {
 	border: none;
 	height: 2.7em;
 	width: 6.8em;
 }
-
-.bouton2{
-	display: none;
-}
-
 
 input[type=search] {
 	height: 2.5em;
@@ -149,15 +148,6 @@ form{
 	padding: 15px;
 	border-radius: 150px;
 	margin-right: 20px;
-}
-
-/* à quoi ca sert ? */.animaux{
-	padding-right: 75px;
-	border-style: solid;
-	border-color: #DEEBFF;
-	padding: 15px;
-	border-radius: 150px;
-	margin-right: 2px;
 }
 
 .recherches-filtres i{
@@ -265,7 +255,6 @@ article h3{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	align-content: space-around;
 	padding: 0 2%;
 }
 
@@ -747,13 +736,13 @@ footer a:hover{
 		padding-bottom: 5%;
 	}
 
-	#populaires h5{
+	#populaires .texte h5{
 		font-size: 1em;
 		margin: 6% 0 1% 0;
 		padding-left: 7%;
 	}
 
-	#populaires a p{
+	#populaires .texte p{
 		font-size: 0.8em;
 		margin: 0;
 		padding: 5px 0 7px 10px;
