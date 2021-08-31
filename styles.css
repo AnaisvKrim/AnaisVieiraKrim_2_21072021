@@ -622,7 +622,7 @@ footer a:hover{
 
 	/*barre de recherche*/
 	form{
-		width: 80%;
+		
 		display: flex;
 		padding: 5% 0 5% 3%;
 	}
@@ -874,6 +874,7 @@ footer a:hover{
 		flex-direction: column;
 		justify-content: center;
 		margin-top: 7%;
+		width: 100%;
 	}
 
 	footer div{
