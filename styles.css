@@ -1,6 +1,6 @@
-/*Média queries Smartphone 320px ligne 538
-				Smartphone 375px ligne 895
-                Tablette ligne 1241*/
+/*Média queries Smartphone 320px ligne 535
+				Smartphone 375px ligne 890
+                Tablette ligne 1233*/
 
 body { /* Rajouter la police*/
 	font-family: 'Raleway';
@@ -41,7 +41,7 @@ header a{
 	border-top-style: solid;
 	border-top-color: #0065fc;
 	margin-right: 60px;
-	padding-top: 17pt;
+	padding-top: 26px;
 	margin-top: -1pt;
 	padding-left: 15px;
 	padding-right: 15px;
@@ -103,7 +103,7 @@ input[type=search] {
 
 .map{
 	background-color: #f2f2f2;
-	width: 18pt;
+	width: 24px;
 	border-radius: 20px 0 0 20px;
 	padding: 0.4% 1.1% 0.4% 1.1%;
 }
@@ -161,15 +161,12 @@ form{
 #bloc-filtres{
 	display: flex;
 	align-items: baseline;
-	align-content: space-between;
 }
 
 #filtres{
 	margin-top: 1.5%;
 	margin-bottom: 1.9%;
 	display: flex;
-	align-items: center;
-	flex-direction: row;
 	justify-content: space-between;
 	width: 70%;
 	padding-right: 50px;
@@ -270,7 +267,7 @@ article h3{
 }
 
 .conteneur-cards p,.starblue{
-	margin: 1.5pt 15pt;
+	margin: 2px 20px;
 }
 
 .conteneur-cards p{
@@ -535,7 +532,7 @@ footer a:hover{
 
 /*média queries*/
 	/*média queries smartphone min 320px*/
-@media screen and (min-width: 300px) and (max-width: 374px){
+@media screen and (min-width: 320px) and (max-width: 374px){
 	body{
 		margin: 0;
 		width: 100%;
@@ -817,7 +814,6 @@ footer a:hover{
 	.bloc-photo{
 		display: flex;
 		flex-direction: column;
-		align-items: center;
 		padding-left: 2.5%;
 		width: 95%;
 	}
@@ -871,14 +867,13 @@ footer a:hover{
 	footer{
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
 		margin-top: 7%;
 		width: 100%;
 	}
 
 	footer div{
 		width: 70%;
-		margin-left: 23pt;
+		margin-left: 30.6px;
 	}
 
 	.a-propos, .nos-hebergements, .assistance{
@@ -1166,7 +1161,6 @@ footer a:hover{
 	.bloc-photo{
 		display: flex;
 		flex-direction: column;
-		align-items: center;
 		padding-left: 2.5%;
 		width: 95%;
 	}
@@ -1216,14 +1210,13 @@ footer a:hover{
 	footer{
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
 		margin-top: 7%;
 		padding-top: 5%;
 	}
 
 	footer div{
 		width: 70%;
-		margin-left: 23pt;
+		margin-left: 30.6px;
 	}
 
 	.a-propos, .nos-hebergements, .assistance{
@@ -1515,7 +1508,6 @@ footer a:hover{
 	.bloc-photo{
 		display: flex;
 		flex-direction: column;
-		align-items: center;
 		padding-left: 2.5%;
 		width: 95%;
 	}
@@ -1564,13 +1556,12 @@ footer a:hover{
 	footer{
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
 		margin-top: 7%;
 	}
 
 	footer div{
 		width: 70%;
-		margin-left: 23pt;
+		margin-left: 30.6px;
 	}
 
 	.a-propos, .nos-hebergements, .assistance{
